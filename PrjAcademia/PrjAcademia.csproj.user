@@ -4,6 +4,9 @@
     <Compile Update="Formularios\frmCadastrarAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Formularios\frmEditarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

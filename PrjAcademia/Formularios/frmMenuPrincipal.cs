@@ -18,7 +18,20 @@ namespace PrjAcademia
 
             formCadastrarAlunos.Show();
 
+           
 
+
+        }
+
+        private void editarAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditarAluno formEditarAluno = new frmEditarAluno();
+
+            formEditarAluno.MdiParent = this;
+
+            formEditarAluno.Show();
+
+           
         }
     }
 }

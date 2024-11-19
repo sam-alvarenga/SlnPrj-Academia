@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
+            menuFormularios = new MenuStrip();
             formuláriosToolStripMenuItem = new ToolStripMenuItem();
             cadastrarAlunosToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            editarAlunoToolStripMenuItem = new ToolStripMenuItem();
+            menuFormularios.SuspendLayout();
             SuspendLayout();
             // 
-            // menuStrip1
+            // menuFormularios
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { formuláriosToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            menuFormularios.Items.AddRange(new ToolStripItem[] { formuláriosToolStripMenuItem });
+            menuFormularios.Location = new Point(0, 0);
+            menuFormularios.Name = "menuFormularios";
+            menuFormularios.Size = new Size(800, 24);
+            menuFormularios.TabIndex = 0;
+            menuFormularios.Text = "menuStrip1";
             // 
             // formuláriosToolStripMenuItem
             // 
-            formuláriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastrarAlunosToolStripMenuItem });
+            formuláriosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastrarAlunosToolStripMenuItem, editarAlunoToolStripMenuItem });
             formuláriosToolStripMenuItem.Name = "formuláriosToolStripMenuItem";
             formuláriosToolStripMenuItem.Size = new Size(82, 20);
             formuláriosToolStripMenuItem.Text = "Formulários";
@@ -54,29 +55,37 @@
             // 
             cadastrarAlunosToolStripMenuItem.Name = "cadastrarAlunosToolStripMenuItem";
             cadastrarAlunosToolStripMenuItem.Size = new Size(180, 22);
-            cadastrarAlunosToolStripMenuItem.Text = "Cadastrar Alunos";
+            cadastrarAlunosToolStripMenuItem.Text = "Cadastrar Aluno";
             cadastrarAlunosToolStripMenuItem.Click += cadastrarAlunosToolStripMenuItem_Click;
+            // 
+            // editarAlunoToolStripMenuItem
+            // 
+            editarAlunoToolStripMenuItem.Name = "editarAlunoToolStripMenuItem";
+            editarAlunoToolStripMenuItem.Size = new Size(180, 22);
+            editarAlunoToolStripMenuItem.Text = "Editar Aluno";
+            editarAlunoToolStripMenuItem.Click += editarAlunoToolStripMenuItem_Click;
             // 
             // frmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
+            Controls.Add(menuFormularios);
             IsMdiContainer = true;
-            MainMenuStrip = menuStrip1;
+            MainMenuStrip = menuFormularios;
             Name = "frmMenuPrincipal";
             Text = "Form1";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            menuFormularios.ResumeLayout(false);
+            menuFormularios.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private MenuStrip menuFormularios;
         private ToolStripMenuItem formuláriosToolStripMenuItem;
         private ToolStripMenuItem cadastrarAlunosToolStripMenuItem;
+        private ToolStripMenuItem editarAlunoToolStripMenuItem;
     }
 }
